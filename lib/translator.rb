@@ -12,10 +12,20 @@ def load_library(filename)
   newHash
 end
 
-def get_japanese_emoticon
-  # code goes here
+
+def get_japanese_emoticon(filename, emoticon)
+  emoticons = load_library(filename)
+  if emoticons["get_emoticon"][emoticon]
+    return emoticons["get_emoticon"][emoticon]
+  end
+  "Sorry, that emoticon was not found"
 end
 
-def get_english_meaning
-  # code goes here
+
+def get_english_meaning(filename, emoticon)
+  emoticons = load_library(filename)
+  if emoticons["get_meaning"][emoticon]
+    return emoticons["get_meaning"][emoticon]
+  end
+  "Sorry, that emoticon was not found"
 end
