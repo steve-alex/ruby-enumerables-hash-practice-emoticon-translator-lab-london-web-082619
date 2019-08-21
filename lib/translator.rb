@@ -18,7 +18,7 @@ def get_japanese_emoticon(filename, emoticon)
   if emoticons["get_emoticon"][emoticon]
     return emoticons["get_emoticon"][emoticon]
   else
-    p "Sorry this does't exist"
+    p "Sorry, that emoticon was not found"
   end
   nil
 end
