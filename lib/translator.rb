@@ -12,6 +12,7 @@ def load_library(filename)
   newHash
 end
 
+
 def get_japanese_emoticon(filename, emoticon)
   emoticons = load_library(filename)
   if emoticons["get_emoticon"][emoticon]
@@ -19,6 +20,7 @@ def get_japanese_emoticon(filename, emoticon)
   end
   "Sorry, that emoticon was not found"
 end
+
 
 def get_english_meaning
   # code goes here
