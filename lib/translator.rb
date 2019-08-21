@@ -14,7 +14,6 @@ end
 
 def get_japanese_emoticon(filename, emoticon)
   emoticons = load_library(filename)
-  
   if emoticons["get_emoticon"][emoticon]
     return emoticons["get_emoticon"][emoticon]
   end
