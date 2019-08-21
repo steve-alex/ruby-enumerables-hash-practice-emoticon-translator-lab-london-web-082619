@@ -17,10 +17,8 @@ def get_japanese_emoticon(filename, emoticon)
   
   if emoticons["get_emoticon"][emoticon]
     return emoticons["get_emoticon"][emoticon]
-  else
-    p "Sorry, that emoticon was not found"
   end
-  nil
+  "Sorry, that emoticon was not found"
 end
 
 def get_english_meaning
