@@ -20,7 +20,7 @@ def get_japanese_emoticon(filename, emoticon)
   else
     p "Sorry this does't exist"
   end
-  
+  nil
 end
 
 def get_english_meaning
